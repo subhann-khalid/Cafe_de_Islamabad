@@ -2,15 +2,69 @@
      26i-3247
      SE-E -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> Cafe De Islamabad </title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe De Islamabad - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Welcome to Cafe De Islamabad </h1>
-    <img src="C:\Users\DELL\Downloads\Coffee-Desserts-CO2023-FE-min.webp" alt="Coffee and dessert" width="500" height="300">
-    <p> Enjoy the delicious coffee and desserts! </p>
- <button> Explore the menu </button>
+
+    <!-- Shared Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">Cafe De Islamabad</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Homepage Content -->
+    <main class="container">
+        <!-- Hero Section (Preserving Original Lab 11 Elements) -->
+        <section class="hero-card">
+            <h1>Welcome to Cafe De Islamabad</h1>
+            <p class="tagline">Enjoy the delicious coffee and desserts!</p>
+
+            <div class="hero-image-wrapper">
+                <!-- Tip: If you put your local image in this same folder, change src to "Coffee-Desserts-CO2023-FE-min.webp" -->
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" 
+                     alt="Coffee and dessert" 
+                     class="hero-img">
+            </div>
+
+            <a href="menu.html" class="btn-primary">Explore the menu</a>
+        </section>
+
+        <!-- Featured Highlights Section -->
+        <section class="highlights">
+            <div class="highlight-card">
+                <h3>Freshly Brewed</h3>
+                <p>Rich, aromatic espresso and handcrafted lattes made from freshly roasted beans.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Artisan Desserts</h3>
+                <p>Warm brownies, cheesecakes, and pastries baked fresh every single morning.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Cozy Vibe</h3>
+                <p>A peaceful spot in the heart of Islamabad to relax, study, or catch up with friends.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Cafe De Islamabad | F-7 Markaz, Islamabad</p>
+        <p class="student-credit">Developed by Muhammad Subhan Khalid (26i-3247) - BS SE-E</p>
+    </footer>
+
 </body>
 </html>

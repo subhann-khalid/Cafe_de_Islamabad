@@ -1,7 +1,190 @@
-body
-{
-    background-color:peachpuff;
-    color:peru;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center
+/* M Subhan Khalid
+   26i-3247
+   SE-E */
+
+/* Reset & Base Styles (Preserving Lab 11 Colors & Font) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: peachpuff;
+    color: peru;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: peru;
+    color: peachpuff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: peachpuff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: peachpuff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #8b4513; /* Warm saddlebrown accent for contrast */
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    width: 92%;
+    margin: 30px auto;
+    flex: 1;
+}
+
+/* Hero Section */
+.hero-card {
+    background-color: #fff5eb; /* Soft cream tint matching peachpuff */
+    border: 2px solid peru;
+    border-radius: 12px;
+    padding: 35px 20px;
+    box-shadow: 0 4px 12px rgba(205, 133, 63, 0.2);
+    margin-bottom: 30px;
+}
+
+.hero-card h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #8b4513;
+}
+
+.tagline {
+    font-size: 1.15rem;
+    margin-bottom: 22px;
+    font-weight: bold;
+}
+
+.hero-image-wrapper {
+    margin: 0 auto 25px auto;
+    max-width: 550px;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid peru;
+    display: block;
+}
+
+/* Primary Button */
+.btn-primary {
+    display: inline-block;
+    background-color: peru;
+    color: peachpuff;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #8b4513;
+    transform: translateY(-2px);
+}
+
+/* Café Highlights Grid */
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.highlight-card {
+    background-color: #fff5eb;
+    border: 1.5px solid peru;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 250px;
+    box-shadow: 0 3px 8px rgba(205, 133, 63, 0.15);
+}
+
+.highlight-card h3 {
+    color: #8b4513;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.highlight-card p {
+    font-size: 0.95rem;
+}
+
+/* Shared Footer */
+.footer {
+    background-color: peru;
+    color: peachpuff;
+    padding: 18px 15px;
+    margin-top: auto;
+    font-size: 0.95rem;
+}
+
+.student-credit {
+    font-size: 0.85rem;
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .hero-card h1 {
+        font-size: 1.7rem;
+    }
 }
