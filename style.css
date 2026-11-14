@@ -188,3 +188,94 @@ body {
         font-size: 1.7rem;
     }
 }
+/* =========================================
+   Menu Page Styles (menu.html)
+   ========================================= */
+
+.page-header {
+    background-color: #fff5eb;
+    border: 2px solid peru;
+    border-radius: 12px;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(205, 133, 63, 0.15);
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    color: #8b4513;
+    margin-bottom: 8px;
+}
+
+.menu-section {
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    color: #8b4513;
+    border-bottom: 2px solid peru;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-card {
+    background-color: #fff5eb;
+    border: 1.5px solid peru;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1 1 280px;
+    box-shadow: 0 3px 8px rgba(205, 133, 63, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+}
+
+.menu-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid peru;
+}
+
+.menu-info {
+    padding: 16px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.menu-header h3 {
+    font-size: 1.15rem;
+    color: #8b4513;
+}
+
+.price {
+    background-color: peru;
+    color: peachpuff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.menu-info p {
+    font-size: 0.92rem;
+    color: peru;
+}
